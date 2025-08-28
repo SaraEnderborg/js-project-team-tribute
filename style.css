@@ -1,33 +1,63 @@
-.header img{
-  max-width: 100%;
+body {
+    background-color:  rgb(205, 224, 245);
 }
 
+.header img{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
 .content {
   display: flex;
-  flex: 25%;
+  flex: 20%;
   justify-content: center;
-  gap: 32px;
+  gap: 20px;
 
 }
 
 .team-member {
   display: flex;
-  flex: 1; /* so all cards in the row grow equally wide */
+  flex: 1; /* make all cards grow equally */
   flex-direction: column;
   align-items: center;
   max-width: 300px;
+  background-color: rgb(229, 238, 247);
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 150px;
 }
 
 .image img {
-  max-width: 320px;
-  max-height: 300px;
+  max-width: 300px;
+  max-height: 280px;
 }
 
 .description {
-  flex: 1; /* expand to fill any remaining vertical space, so all descriptions line up and match the tallest one across the row. */
+  flex: 1; /* expand to fill any remaining vertical space, so all descriptions line up and match the tallest one across the row. This makes the buttons aligned vertically */
   margin: 20px;
+}
+
+button {
+  background-color: rgb(83, 119, 210);
+}
+
+button a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.footer {
+  display: flex; /* to stretch image to full width*/
 }
 
 .footer img {
   max-width: 100%;
+  display: flex;
+  flex: 1;
 }

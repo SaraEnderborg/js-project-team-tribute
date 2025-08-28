@@ -2,17 +2,27 @@ body {
     background-color:  rgb(205, 224, 245);
 }
 
-.header img{
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
 .header{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* center image and header text */
   margin-bottom: 50px;
 }
+
+.image-box {
+  background-color: rgb(83, 119, 210);
+  width: 100%; /* stretch whole width */
+  display: flex;
+  justify-content: center; /* put the header image in center */
+  margin-bottom: 20px;
+
+}
+
+.header img{
+  max-height: 250px;
+  margin-bottom: 20px;
+}
+
 .content {
   display: flex;
   flex: 20%;

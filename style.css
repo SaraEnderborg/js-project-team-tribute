@@ -1,0 +1,33 @@
+.header img{
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  flex: 25%;
+  justify-content: center;
+  gap: 32px;
+
+}
+
+.team-member {
+  display: flex;
+  flex: 1; /* so all cards in the row grow equally wide */
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.image img {
+  max-width: 320px;
+  max-height: 300px;
+}
+
+.description {
+  flex: 1; /* expand to fill any remaining vertical space, so all descriptions line up and match the tallest one across the row. */
+  margin: 20px;
+}
+
+.footer img {
+  max-width: 100%;
+}
